@@ -1,10 +1,14 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
 
-const LoginButton: React.FC = () => {
-  const { loginWithRedirect } = useAuth0();
+import LoginButton from "@/components/LoginButton";
 
-  return <button onClick={() => loginWithRedirect()}>Log In</button>;
+const Login: React.FC = () => {
+  return (
+    <div>
+      <h2>Login</h2>
+      <LoginButton />
+    </div>
+  );
 };
 
-export default LoginButton;
+export default Login;

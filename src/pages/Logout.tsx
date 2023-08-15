@@ -1,18 +1,14 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
 
-const LogoutButton: React.FC = () => {
-  const { logout } = useAuth0();
+import LogoutButton from "@/components/LogoutButton";
 
+const Logout: React.FC = () => {
   return (
-    <button
-      onClick={() =>
-        logout({ logoutParams: { returnTo: window.location.origin } })
-      }
-    >
-      Log Out
-    </button>
+    <div>
+      <h2>Login</h2>
+      <LogoutButton />
+    </div>
   );
 };
 
-export default LogoutButton;
+export default Logout;
