@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import AuthProvider from "./provider";
+import styles from "../page.module.css";
+import AuthProvider from "../Provider";
 
 export default function Home() {
   return (
